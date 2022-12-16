@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms">
+        <div class="form login">
+          <span class="title">Hyni</span>
+
+          <form name="logForm" action="#  " onsubmit="return validateLogin()">
+            <p class="errori" id="error-msg"></p>
+            <div class="input-field">
+              <input type="email" name="email" placeholder="Enter your email" />
+            </div>
+            <div class="input-field">
+              <input
+                name="password"
+                type="password"
+                class="password"
+                placeholder="Enter your password"
+              />
+            </div>
+            <div class="input-field button">
+              <button type="submit">Login</button>
+            </div>
+          </form>
+
+          <div class="login-signup">
+            <a href="#" class="text signup-link">Regjistrohuni</a>
+          </div>
+        </div>
+
+        <!-- Regjistrohu -->
+        <div class="form signup">
+          <span class="title">Regjistrohu</span>
+
+          <form name="regForm" action="#" onsubmit="return validateReg()">
+            <p class="errori" id="error-msgReg"></p>
+            <div class="input-field">
+              <input type="text" name="name" placeholder="Enter your name" />
+            </div>
+            <div class="input-field">
+              <input type="email" name="email" placeholder="Enter your email" />
+            </div>
+            <div class="input-field">
+              <input
+                type="password"
+                name="password"
+                class="password"
+                placeholder="Create a password"
+              />
+            </div>
+            <div class="input-field">
+              <input
+                type="password"
+                name="conPassword"
+                class="password"
+                placeholder="Confirm a password"
+              />
+            </div>
+
+            <div class="input-field button">
+              <button type="submit">Signup</button>
+            </div>
+          </form>
+
+          <div class="login-signup">
+            <a href="#" class="text login-link">Login Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
